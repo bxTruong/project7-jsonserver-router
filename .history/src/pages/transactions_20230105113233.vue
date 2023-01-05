@@ -10,15 +10,6 @@
 
 <script>
 export default {
-    data() {
-        return {
-            transactions: []
-        }
-    },
-    created() {
-        fetch("https://jsonplaceholder.typicode.com/posts")
-            .then((response) => response.json())
-            .then((data) => this.transactions = data);
-    }
+   set
 }
 </script>

@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import fetchPosts from "../uses/fetchPosts.js"
+import fetchPosts from "../uses"
 export default {
   props: {
     theme: {
@@ -22,9 +22,7 @@ export default {
 
   // setup cannot run async
   setup(props, context) {
-    const {posts, error, fetchData} = fetchPosts();
-    fetchData();
-    return {posts, error}
+    
   },
 
   /**

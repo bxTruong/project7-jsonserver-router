@@ -22,9 +22,9 @@ export default {
 
   // setup cannot run async
   setup(props, context) {
-    const {posts, error, fetchData} = fetchPosts();
+    const {posts, fetchData} = fetchPosts();
     fetchData();
-    return {posts, error}
+    return {posts}
   },
 
   /**
